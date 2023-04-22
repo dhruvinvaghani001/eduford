@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univercity Website - design </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="I:\new project\fontawesome-free-5.15.4-web\css\all.min.css">
+</head>
+<body>
+    <section class="header">
+            <nav>
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            
+                <div class="nav-list" id="navList">
+                    <i class="fa fa-window-close" onclick="hidenmenu()"></i>                       
+                    <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">ABOUT</a></li>
+                            <li><a href="">COURSE</a></li>
+                            <li><a href="">BLOG</a></li>
+                            <li><a href="">CONTACT</a></li>
+
+                        </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+
+            </nav>
+    
+    <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>Making website is easiest things in the world . you just need to learn html , css and <br>javascript an you are good on to this web devlopment course  </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+    </div>
+    </section>
+
+<!-- ------------------ course ------------------------------------ -->
+
+    <section class="course">
+            <h1>Course We Offer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, delectus.</p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+<!-- -=------------------------------javascript buttun events----------------------------------------- -->
+<script>
+    var navList = document.getElementById("navList");
+
+    function showmenu(){
+        navList.style.right="0";
+    }
+    function hidenmenu(){
+        navList.style.right= "-200px";
+    }
+
+</script>
+
+</body>
+</html>

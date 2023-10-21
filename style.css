@@ -17,10 +17,9 @@
 
 .navigation{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
     padding:20px 100px;
-    background-color: #8D3DAF;
     position: fixed;
     width: 90%;
     z-index: 100;
@@ -31,11 +30,15 @@
     color: #f44336;
 }
 .menu-btn{
-    display: none;
+    display: nonegit ;
 }
 
 nav img {
     width: 100px;
+}
+
+.nav-list{
+    transition: 500s ease-in;
 }
 
 .nav-list ul li {
@@ -127,7 +130,7 @@ nav .fa {
         height: fit-content;
         width: 200px;
         padding: 10px;
-        background-color: #8D3DAF;
+        background-color: #474747;
         position: fixed;
         top: 100px;
         right: 5%;
@@ -679,4 +682,28 @@ i {
 
 .nav-list ul li:hover ion-icon {
     color: #ccc;
+}
+.scroll{
+   background-color: #313131;
+}
+.menu{
+    display: none;
+}
+.close{
+    display: none;
+}
+@media (max-width :700px) {
+    .navigation{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .menu{
+        display: inline-block;
+        margin-right: 50px;
+    }
+    .close{
+        margin-right: 50px;
+    }
+
 }

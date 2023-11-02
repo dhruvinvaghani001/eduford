@@ -18,11 +18,25 @@ close.addEventListener("click", function () {
 
 
 
-window.onscroll = function() {
-  console.log(scrollY)
-  if(scrollY > 200){
-      navigation.classList.add("scroll");
-  }else{
+window.onscroll = function () {
+  if (scrollY > 200) {
+    navigation.classList.add("scroll");
+  } else {
     navigation.classList.remove("scroll");
   }
 };
+
+
+const form = document.getElementById("contactform");
+form.addEventListener('submit', function () {
+  const from_name = document.getElementById("name").value;
+  const from_email = document.getElementById("email").value;
+  const subject = document.getElementById("subject").value;
+  const message = document.getElementById("message").value;
+  emailjs.send("service_i8ncm7j", "template_hk652qe", {
+    from_name: from_name,
+    subject: subject,
+    message: message,
+    email_id: from_email,
+  });
+})

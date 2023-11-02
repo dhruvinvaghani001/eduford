@@ -604,14 +604,16 @@ i {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 15px 0;
+    margin: 50px 0;
 }
 
 .cards_all {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    gap:50px;
+
 }
 
 .card .card_header {

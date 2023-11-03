@@ -28,15 +28,23 @@ window.onscroll = function () {
 
 
 const form = document.getElementById("contactform");
-form.addEventListener('submit', function () {
+form.addEventListener('submit', async function (e) {
+
+  e.preventDefault();
   const from_name = document.getElementById("name").value;
   const from_email = document.getElementById("email").value;
   const subject = document.getElementById("subject").value;
   const message = document.getElementById("message").value;
-  emailjs.send("service_i8ncm7j", "template_hk652qe", {
+  const res = emailjs.send("service_i8ncm7j", "template_hk652qe", {
     from_name: from_name,
     subject: subject,
     message: message,
     email_id: from_email,
   });
+  const finalresponse = await res;
+  if (finalresponse.status === 200) {
+    alert("Email sent succesffully");
+  } else {
+    alert("Email not send ! Error ocuured");
+  }
 })

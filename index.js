@@ -16,17 +16,6 @@ close.addEventListener("click", function () {
 });
 
 
-
-
-window.onscroll = function () {
-  if (scrollY > 200) {
-    navigation.classList.add("scroll");
-  } else {
-    navigation.classList.remove("scroll");
-  }
-};
-
-
 const form = document.getElementById("contactform");
 form.addEventListener('submit', async function (e) {
 

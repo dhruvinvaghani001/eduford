@@ -7,13 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Univercity Website - design </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="E:\dhruvin\University\fontawesome-free-5.15.4-web\css\all.min.css">
-    <style>
-        .fas {
-            color: #f44336;
-
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/0608437f3e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,19 +25,17 @@
                     <li><a href="course.html">COURSE</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="team.html">OUR TEAM</a></li>
 
                 </ul>
             </div>
             <ion-icon name="menu-outline" class="menu-btn menu"></ion-icon>
             <ion-icon name="close-outline" class="menu-btn close "></ion-icon>
-            <!-- <i class="fa fa-bars" onclick="showmenu()"></i> -->
-
+          
         </nav>
 
         <div class="text-box " style="font-size: 48px;">
             <h1>Our Certificates & Online Programs For 2021</h1>
-            <!-- <p>Making website is easiest things in the world . you just need to learn html , css and <br>javascript an you are good on to this web devlopment course  </p> -->
-            <!-- <a href="" class="hero-btn">Visit Us To Know More</a> -->
         </div>
     </section>
 
@@ -52,7 +44,7 @@
         <div class="row">
             <div class="blog-left">
                 <img src="img\certificate.jpg" alt="">
-                <h2>Our Certificates & Online Programs For 2021</h2>
+                <h2 style="color: white;">Our Certificates & Online Programs For 2021</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore Lorem ipsum dolor sit, amet
                     consectetur adipisicing elit.
                     Explicabo quaerat tempore eligendi officia quos laborum a dolorum impedit aperiam cupiditate,
@@ -123,10 +115,10 @@
 
         <div class="cooment-box">
             <h3>Leave A comment</h3>
-            <form action="">
-                <input type="text" placeholder="Enter  Name " required>
-                <input type="text" placeholder="Enter  Email:" required>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Comment" required></textarea>
+            <form action="blog.php" method="POST">
+                <input type="text" name="name" placeholder="Enter  Name " required>
+                <input type="text" name="email" placeholder="Enter  Email:" required>
+                <textarea name="" id="" cols="30" name="comment" rows="10" placeholder="Your Comment" required></textarea>
                 <button type="submit" class="red-btn hero-btn">Post Comment</button>
 
 

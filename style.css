@@ -20,6 +20,9 @@ body{
     background-size: cover;
     position: relative;
 }
+.mainbanner{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/hero.jpg);
+}
 .navigation{
     display: flex;
     justify-content:space-around;
@@ -366,6 +369,10 @@ p {
     background-size: cover;
     color: #fff;
     text-align: center;
+
+}
+.mainbanner{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/hero.jpg);
 
 }
 
